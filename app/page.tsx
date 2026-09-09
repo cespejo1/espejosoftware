@@ -10,6 +10,7 @@ const services = [
 const projects = [
   {
     name: 'TradeWork',
+    slug: 'tradework',
     label: 'Business operations · Web + mobile',
     text: 'A purpose-built operations platform that helps trade businesses organize requests, jobs, workers, and customers.',
     href: 'https://app.tradeworkapp.com',
@@ -18,6 +19,7 @@ const projects = [
   },
   {
     name: 'Elite Driving School',
+    slug: 'elite-driving-school',
     label: 'Scheduling & customer portal · Web app',
     text: 'An all-in-one student experience for registration, scheduling, payments, documents, and progress tracking.',
     href: 'https://elitedriversmn.com',
@@ -26,6 +28,7 @@ const projects = [
   },
   {
     name: 'TAG Groceries',
+    slug: 'tag-groceries',
     label: 'Shopping utility · Mobile app',
     text: 'A practical mobile product that helps shoppers organize grocery lists by store and aisle.',
     href: 'https://taggroceries.com/#/',
@@ -64,8 +67,8 @@ export default function Home() {
         <div className="section-title"><div><p className="eyebrow">Selected work</p><h2>Built for the<br /><em>real world.</em></h2></div><p>Software already helping businesses serve customers, manage operations, and move forward.</p></div>
         <div className="project-list">
           {projects.map((project, index) => <article className={`project ${project.className}`} key={project.name}>
-            <div className="project-meta"><small>0{index + 1} / {project.label}</small><h3>{project.name}</h3><p>{project.text}</p><a href={project.href} target="_blank" rel="noreferrer">View live project ↗</a></div>
-            <a className="project-image" href={project.href} target="_blank" rel="noreferrer" aria-label={`View ${project.name}`}>
+            <div className="project-meta"><small>0{index + 1} / {project.label}</small><h3>{project.name}</h3><p>{project.text}</p><div className="project-links"><a href={`/work/${project.slug}`}>Read case study →</a><a href={project.href} target="_blank" rel="noreferrer">View live ↗</a></div></div>
+            <a className="project-image" href={`/work/${project.slug}`} aria-label={`Read the ${project.name} case study`}>
               <Image src={project.image} alt={`${project.name} application interface`} fill sizes="(max-width: 800px) 100vw, 62vw" />
             </a>
           </article>)}
