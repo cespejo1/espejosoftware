@@ -75,7 +75,14 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="about" id="about"><div className="shell about-grid"><p className="eyebrow">Why Espejo</p><div><h2>Small studio.<br /><em>Serious partnership.</em></h2><p>Espejo Software is a family-named, Florida-based studio. You work directly with the person building your product—from the first conversation through launch and every useful improvement after it.</p><div className="principles"><span><b>DIRECT</b>Clear communication, no layers.</span><span><b>PRACTICAL</b>Technology that solves real problems.</span><span><b>LONG-TERM</b>A partner after launch, not just before it.</span></div></div></div></section>
+      <section className="about" id="about"><div className="shell">
+        <div className="about-heading"><p className="eyebrow">Meet the founder</p><h2>Experience at scale.<br /><em>Built for real people.</em></h2></div>
+        <div className="founder-grid">
+          <div className="founder-photo"><Image src="/carlos-espejo.jpg" alt="Carlos Espejo after completing a marathon" fill sizes="(max-width: 800px) 100vw, 45vw" /></div>
+          <div className="founder-story"><p className="founder-name">Carlos Espejo <span>Founder &amp; Software Developer</span></p><p>I&apos;ve spent years building software in very different environments—from large corporations such as Target and Entrust to consulting engagements and custom products for smaller businesses. That range taught me how to bring enterprise-level thinking to practical problems without making the solution more complicated than it needs to be.</p><p>As a developer and entrepreneur, I&apos;m most energized by understanding how something works, finding where it gets stuck, and creating a better path forward. Software is one of the best tools I know for doing that: connecting people, simplifying work, and turning an idea into something genuinely useful.</p><p>Outside of work, I&apos;m a family man who values time with family and friends. You&apos;ll also find me playing basketball or out for a run. The same things I appreciate there—discipline, teamwork, steady progress, and enjoying the process—shape how I approach every project.</p><div className="founder-quote">“The best software doesn&apos;t call attention to its complexity. It simply makes the work feel easier.”</div></div>
+        </div>
+        <div className="principles"><span><b>EXPERIENCED</b>Enterprise perspective with hands-on execution.</span><span><b>PRACTICAL</b>Technology shaped around the real problem.</span><span><b>PERSONAL</b>Direct collaboration from idea through launch.</span></div>
+      </div></section>
 
       <section className="contact" id="contact"><div className="shell contact-grid">
         <div className="contact-intro"><p className="eyebrow">Start a project</p><h2>What could work<br /><em>better?</em></h2><p>Tell us what is slowing your business down—or what you wish your software could do. We&apos;ll start with a focused conversation.</p><a href="mailto:cespejo1@yahoo.com">cespejo1@yahoo.com ↗</a></div>
