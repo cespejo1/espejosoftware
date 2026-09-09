@@ -2,9 +2,33 @@ import Image from 'next/image';
 import ContactForm from './components/ContactForm';
 
 const services = [
-  ['01', 'Web applications', 'Custom platforms shaped around your operations, customers, and next stage of growth.'],
-  ['02', 'Mobile products', 'Clear, dependable mobile experiences that keep your business close to its customers.'],
-  ['03', 'App management', 'Ongoing improvements, monitoring, and support from a partner who knows your product.'],
+  {
+    number: '01',
+    title: 'Web applications',
+    text: 'Custom platforms shaped around your operations, customers, and next stage of growth.',
+    example: 'TradeWork',
+    detail: 'Operations platforms · CRM · Customer portals',
+    image: '/tradework-portfolio.png',
+    href: '/work/tradework',
+  },
+  {
+    number: '02',
+    title: 'Mobile products',
+    text: 'Clear, dependable mobile experiences that keep your business close to its customers.',
+    example: 'TAG Groceries',
+    detail: 'iOS & Android · Shared tools · Mobile-first UX',
+    image: '/tag-portfolio.png',
+    href: '/work/tag-groceries',
+  },
+  {
+    number: '03',
+    title: 'App management',
+    text: 'Ongoing improvements, monitoring, and support from a partner who knows your product.',
+    example: 'Elite Driving School',
+    detail: 'Monitoring · Improvements · Long-term support',
+    image: '/elite-dashboard.png',
+    href: '/work/elite-driving-school',
+  },
 ];
 
 const projects = [
@@ -60,7 +84,13 @@ export default function Home() {
       </section>
 
       <section className="service-strip" id="services"><div className="shell service-grid">
-        {services.map(([number, title, text]) => <article key={number}><small>{number} / SERVICE</small><h2>{title}</h2><p>{text}</p></article>)}
+        {services.map((service) => <article className="service-card" key={service.number}>
+          <div className="service-copy"><small>{service.number} / SERVICE</small><h2>{service.title}</h2><p>{service.text}</p></div>
+          <a className="service-example" href={service.href} aria-label={`See ${service.example} case study`}>
+            <span className="service-visual"><Image src={service.image} alt={`${service.example} application example`} fill sizes="(max-width: 650px) 100vw, 33vw" /></span>
+            <span className="service-example-copy"><small>EXAMPLE / {service.example}</small><b>{service.detail}</b><i>View case study →</i></span>
+          </a>
+        </article>)}
       </div></section>
 
       <section className="work shell" id="work">
