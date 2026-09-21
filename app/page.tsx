@@ -93,6 +93,23 @@ export default function Home() {
         </article>)}
       </div></section>
 
+      <section className="idea-story"><div className="shell idea-story-inner">
+        <div className="idea-story-heading">
+          <p className="eyebrow">Start with possibility</p>
+          <h2>You have an idea?<br /><em>Let&apos;s build it.</em></h2>
+        </div>
+        <div className="idea-story-copy">
+          <p className="idea-story-lede">It might begin with a simple thought: <strong>“I wish our customers could…”</strong> or <strong>“There has to be a better way to do this.”</strong> That&apos;s enough to start.</p>
+          <p>You don&apos;t need a technical plan or every answer. Bring the problem, the opportunity, or even the ambitious what-if. Together, we&apos;ll shape it into software people can use—then launch it, learn from it, and keep making it better.</p>
+          <a className="solid-button" href="#contact">Tell me your idea ↗</a>
+        </div>
+        <div className="idea-path" aria-label="How an idea becomes software">
+          <article><span>01</span><h3>Imagine</h3><p>Picture what could be easier, faster, or entirely new for your business and customers.</p></article>
+          <article><span>02</span><h3>Shape</h3><p>We turn the vision into a focused plan, prioritizing what creates the most value first.</p></article>
+          <article><span>03</span><h3>Build</h3><p>Your idea becomes a thoughtful, dependable product ready to grow in the real world.</p></article>
+        </div>
+      </div></section>
+
       <section className="work shell" id="work">
         <div className="section-title"><div><p className="eyebrow">Selected work</p><h2>Built for the<br /><em>real world.</em></h2></div><p>Software already helping businesses serve customers, manage operations, and move forward.</p></div>
         <div className="project-list">
