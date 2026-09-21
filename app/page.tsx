@@ -70,18 +70,22 @@ export default function Home() {
         <a className="outline-button" href="#contact">Start a project ↗</a>
       </nav>
 
-      <section className="hero shell" id="top">
-        <div className="hero-copy">
+      <section className="idea-story" id="top"><div className="shell idea-story-inner">
+        <div className="idea-story-heading">
           <p className="eyebrow">Independent software studio · Florida</p>
-          <h1>Software that means <em>business.</em></h1>
-          <p className="hero-lede">We build focused web and mobile applications for businesses ready to work smarter and grow with confidence.</p>
-          <div className="hero-actions"><a className="solid-button" href="#contact">Discuss your project ↗</a><a className="plain-link" href="#work">View selected work ↓</a></div>
+          <h1>You have an idea?<br /><em>Let&apos;s build it.</em></h1>
         </div>
-        <div className="hero-machine" aria-hidden="true">
-          <div className="signal"><span /> LIVE SYSTEM</div>
-          <div className="machine-grid"><div className="machine-main"><small>OPERATIONS</small><b>Everything<br />in its place.</b><div className="lines"><i /><i /><i /></div></div><div className="machine-stat"><small>UPTIME</small><b>99.9%</b></div><div className="machine-stat bright"><small>NEXT</small><b>↗</b></div></div>
+        <div className="idea-story-copy">
+          <p className="idea-story-lede">It might begin with a simple thought: <strong>“I wish our customers could…”</strong> or <strong>“There has to be a better way to do this.”</strong> That&apos;s enough to start.</p>
+          <p>You don&apos;t need a technical plan or every answer. Bring the problem, the opportunity, or even the ambitious what-if. Together, we&apos;ll shape it into software people can use—then launch it, learn from it, and keep making it better.</p>
+          <div className="idea-actions"><a className="idea-button" href="#contact">Tell me your idea ↗</a><a href="#work">See what&apos;s possible ↓</a></div>
         </div>
-      </section>
+        <div className="idea-path" aria-label="How an idea becomes software">
+          <article><span>01</span><h3>Imagine</h3><p>Picture what could be easier, faster, or entirely new for your business and customers.</p></article>
+          <article><span>02</span><h3>Shape</h3><p>We turn the vision into a focused plan, prioritizing what creates the most value first.</p></article>
+          <article><span>03</span><h3>Build</h3><p>Your idea becomes a thoughtful, dependable product ready to grow in the real world.</p></article>
+        </div>
+      </div></section>
 
       <section className="service-strip" id="services"><div className="shell service-grid">
         {services.map((service) => <article className="service-card" key={service.number}>
@@ -91,23 +95,6 @@ export default function Home() {
             <span className="service-example-copy"><small>EXAMPLE / {service.example}</small><b>{service.detail}</b><i>View case study →</i></span>
           </a>
         </article>)}
-      </div></section>
-
-      <section className="idea-story"><div className="shell idea-story-inner">
-        <div className="idea-story-heading">
-          <p className="eyebrow">Start with possibility</p>
-          <h2>You have an idea?<br /><em>Let&apos;s build it.</em></h2>
-        </div>
-        <div className="idea-story-copy">
-          <p className="idea-story-lede">It might begin with a simple thought: <strong>“I wish our customers could…”</strong> or <strong>“There has to be a better way to do this.”</strong> That&apos;s enough to start.</p>
-          <p>You don&apos;t need a technical plan or every answer. Bring the problem, the opportunity, or even the ambitious what-if. Together, we&apos;ll shape it into software people can use—then launch it, learn from it, and keep making it better.</p>
-          <a className="solid-button" href="#contact">Tell me your idea ↗</a>
-        </div>
-        <div className="idea-path" aria-label="How an idea becomes software">
-          <article><span>01</span><h3>Imagine</h3><p>Picture what could be easier, faster, or entirely new for your business and customers.</p></article>
-          <article><span>02</span><h3>Shape</h3><p>We turn the vision into a focused plan, prioritizing what creates the most value first.</p></article>
-          <article><span>03</span><h3>Build</h3><p>Your idea becomes a thoughtful, dependable product ready to grow in the real world.</p></article>
-        </div>
       </div></section>
 
       <section className="work shell" id="work">
