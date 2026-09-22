@@ -126,7 +126,7 @@ export default function Home() {
 
       <section className="idea-story" id="top"><div className="shell idea-story-inner">
         <div className="idea-story-heading">
-          <p className="eyebrow">Independent software studio · Florida</p>
+          <p className="eyebrow">Software company · West Palm Beach · South Florida</p>
           <h1>You have an idea?<br /><em>Let&apos;s build it.</em></h1>
         </div>
         <div className="idea-story-copy">
@@ -192,11 +192,11 @@ export default function Home() {
       </div></section>
 
       <section className="contact" id="contact"><div className="shell contact-grid">
-        <div className="contact-intro"><p className="eyebrow">Start a project</p><h2>What could work<br /><em>better?</em></h2><p>Tell us what is slowing your business down—or what you wish your software could do. We&apos;ll start with a focused conversation.</p><a href="mailto:cespejo1@yahoo.com">cespejo1@yahoo.com ↗</a></div>
+        <div className="contact-intro"><p className="eyebrow">Start a project</p><h2>What could work<br /><em>better?</em></h2><p>Tell us what is slowing your business down—or what you wish your software could do. We&apos;ll start with a focused conversation.</p><p className="service-area">Serving West Palm Beach, Loxahatchee, The Acreage, Palm Beach County, and businesses throughout South Florida.</p><a href="mailto:cespejo1@yahoo.com">cespejo1@yahoo.com ↗</a></div>
         <ContactForm />
       </div></section>
 
-      <footer className="footer shell"><a className="brand" href="#top"><span>E</span> ESPEJO SOFTWARE</a><p>Web apps · Mobile apps · Ongoing support</p><div><span>© {new Date().getFullYear()} Espejo Software LLC</span><span>Florida, USA</span></div></footer>
+      <footer className="footer shell"><a className="brand" href="#top"><span>E</span> ESPEJO SOFTWARE</a><p>Web apps · Mobile apps · Ongoing support</p><div><span>© {new Date().getFullYear()} Espejo Software LLC</span><span>West Palm Beach · South Florida</span></div></footer>
     </main>
   );
 }
