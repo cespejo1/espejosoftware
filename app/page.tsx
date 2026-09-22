@@ -61,12 +61,64 @@ const projects = [
   },
 ];
 
+const pricing = [
+  {
+    label: 'Flexible support',
+    name: 'Hourly',
+    price: '$80',
+    cadence: 'per hour',
+    text: 'Focused development, troubleshooting, consulting, or improvements when you need an experienced hand.',
+    note: 'Pay only for the time you use',
+  },
+  {
+    label: 'Monthly partnership',
+    name: 'Momentum',
+    price: '$500',
+    cadence: 'per month',
+    text: 'Ten dedicated hours each month for steady improvements, maintenance, and moving your product forward.',
+    note: 'Includes up to 10 hours',
+  },
+  {
+    label: 'Monthly partnership',
+    name: 'Growth',
+    price: '$1,000',
+    cadence: 'per month',
+    text: 'Twenty-five dedicated hours for businesses with an active roadmap and a consistent development rhythm.',
+    note: 'Includes up to 25 hours',
+  },
+  {
+    label: 'Simple web presence',
+    name: 'Static website',
+    price: '$500',
+    cadence: 'starting at',
+    text: 'A polished, responsive website that gives your business a credible home online and a clear next step for visitors.',
+    note: 'Best for focused informational sites',
+  },
+  {
+    label: 'Turn the idea into something real',
+    name: 'MVP',
+    price: '$5,000',
+    cadence: 'starting at',
+    text: 'Launch the essential version of your web or mobile app, put it in people’s hands, and learn what to build next.',
+    note: 'Focused scope · Real product · Ready to test',
+    featured: true,
+  },
+  {
+    label: 'Built around your business',
+    name: 'Custom app',
+    price: '$10,000',
+    cadence: 'starting at',
+    text: 'A full custom application shaped around your customers, workflow, and goals. Scope confirms the final investment.',
+    note: 'Web or mobile · Scope required',
+  },
+];
+
 export default function Home() {
   return (
     <main>
       <nav className="nav shell" aria-label="Main navigation">
         <a className="brand" href="#top" aria-label="Espejo Software home"><span>E</span> ESPEJO SOFTWARE</a>
-        <div className="nav-links"><a href="#services">Services</a><a href="#work">Work</a><a href="#about">About</a></div>
+        <div className="nav-links"><a href="#services">Services</a><a href="#work">Work</a><a href="#pricing">Pricing</a><a href="#about">About</a></div>
         <a className="outline-button" href="#contact">Start a project ↗</a>
       </nav>
 
@@ -108,6 +160,24 @@ export default function Home() {
           </article>)}
         </div>
       </section>
+
+      <section className="pricing" id="pricing"><div className="shell">
+        <div className="pricing-heading">
+          <div><p className="eyebrow">Ways to work together</p><h2>You do what you do best.<br /><em>I&apos;ll build what comes next.</em></h2></div>
+          <div><p>You have the vision and the knowledge of your business. I bring years of experience turning ideas into useful software—from focused MVPs to complete web and mobile applications.</p><p>Start small, keep momentum month to month, or build the product you&apos;ve been imagining.</p></div>
+        </div>
+        <div className="pricing-grid">
+          {pricing.map((plan) => <article className={plan.featured ? 'pricing-card featured' : 'pricing-card'} key={plan.name}>
+            <small>{plan.label}</small>
+            <h3>{plan.name}</h3>
+            <div className="price"><strong>{plan.price}</strong><span>{plan.cadence}</span></div>
+            <p>{plan.text}</p>
+            <div className="pricing-note">{plan.note}</div>
+            <a href="#contact">Let&apos;s talk ↗</a>
+          </article>)}
+        </div>
+        <div className="pricing-footer"><p>Every project starts with a conversation. Final pricing, scope, and timeline are confirmed before work begins.</p><a href="#contact">Tell me what you&apos;re dreaming up →</a></div>
+      </div></section>
 
       <section className="about" id="about"><div className="shell">
         <div className="about-heading"><p className="eyebrow">Meet the founder</p><h2>Experience at scale.<br /><em>Built for real people.</em></h2></div>

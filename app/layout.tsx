@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import './globals.css';
 import './service-cards.css';
+import './pricing.css';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://espejosoftware.com'),
