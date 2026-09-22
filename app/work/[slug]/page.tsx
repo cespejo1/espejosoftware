@@ -27,7 +27,7 @@ export default async function ProjectPage({ params }: Props) {
   const next = projects[(current + 1) % projects.length];
 
   return <main className={`case-study case-${project.slug}`}>
-    <nav className="nav shell case-nav" aria-label="Project navigation"><Link className="brand" href="/"><span>E</span> ESPEJO SOFTWARE</Link><Link className="case-back" href="/#work">← All work</Link><Link className="outline-button" href="/#contact">Start a project ↗</Link></nav>
+    <nav className="nav shell case-nav" aria-label="Project navigation"><Link className="brand" href="/"><span>E</span> ESPEJO SOFTWARE</Link><Link className="case-back" href="/#work">← All work</Link><Link className="lang-switch" href={`/es/work/${project.slug}`} lang="es">ES</Link><Link className="outline-button" href="/#contact">Start a project ↗</Link></nav>
     <header className="case-hero shell"><div className="case-kicker"><span>{project.index}</span><p>{project.category}</p></div><h1>{project.name}</h1><div className="case-intro"><h2>{project.headline}</h2><p>{project.summary}</p></div></header>
     <section className="case-image case-image-primary"><Image src={project.images[0].src} alt={project.images[0].alt} fill priority sizes="100vw" /></section>
     <section className="case-overview shell"><aside><p className="eyebrow">The project</p><a href={project.liveUrl} target="_blank" rel="noreferrer">{project.liveLabel} ↗</a></aside><div><article><small>THE CHALLENGE</small><p>{project.challenge}</p></article><article><small>THE SOLUTION</small><p>{project.solution}</p></article></div></section>

@@ -15,6 +15,7 @@ export async function POST(request: Request) {
     const email = clean(body.email, 200);
     const company = clean(body.company, 150);
     const message = clean(body.message, 5000);
+    const locale = clean(body.locale, 5) === 'es' ? 'Spanish' : 'English';
     if (!name || !message || !/^\S+@\S+\.\S+$/.test(email)) return NextResponse.json({ error: 'Invalid form submission' }, { status: 400 });
 
     const apiKey = process.env.RESEND_API_KEY;
@@ -29,7 +30,7 @@ export async function POST(request: Request) {
         to: ['cespejo1@yahoo.com'],
         reply_to: email,
         subject: `New Espejo Software inquiry from ${name.replace(/[\r\n]/g, ' ')}`,
-        text: [`Name: ${name}`, `Email: ${email}`, `Company: ${company || 'Not provided'}`, '', message].join('\n'),
+        text: [`Name: ${name}`, `Email: ${email}`, `Company: ${company || 'Not provided'}`, `Site language: ${locale}`, '', message].join('\n'),
       }),
     });
     if (!response.ok) return NextResponse.json({ error: 'Email provider rejected the message' }, { status: 502 });

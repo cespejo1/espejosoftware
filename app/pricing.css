@@ -4,6 +4,24 @@
   background: #e6f0e9;
 }
 
+.lang-switch {
+  display: grid;
+  width: 34px;
+  height: 34px;
+  place-items: center;
+  border: 1px solid var(--ink);
+  border-radius: 50%;
+  font-size: 9px;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  transition: 0.2s;
+}
+
+.lang-switch:hover {
+  background: var(--ink);
+  color: white;
+}
+
 .pricing-heading {
   display: grid;
   grid-template-columns: 1.22fr 0.78fr;
@@ -59,17 +77,24 @@
   color: white;
 }
 
-.pricing-card.featured::before {
+.featured-badge {
   position: absolute;
   top: 24px;
   right: 24px;
-  content: 'START HERE';
   padding: 8px 10px;
   background: var(--acid);
   color: var(--ink);
   font-size: 8px;
   font-weight: 900;
   letter-spacing: 0.12em;
+}
+
+[lang='es'] .founder-photo::after {
+  content: 'SIGUE AVANZANDO';
+}
+
+[lang='es'] .idea-story-inner::after {
+  content: '¿Y SI...?';
 }
 
 .pricing-card small {
@@ -207,5 +232,13 @@
   .pricing-footer {
     align-items: flex-start;
     flex-direction: column;
+  }
+
+  .lang-switch {
+    margin-left: auto;
+  }
+
+  .nav .lang-switch + .outline-button {
+    margin-left: 0;
   }
 }

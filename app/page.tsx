@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import ContactForm from './components/ContactForm';
 
 const services = [
@@ -119,6 +120,7 @@ export default function Home() {
       <nav className="nav shell" aria-label="Main navigation">
         <a className="brand" href="#top" aria-label="Espejo Software home"><span>E</span> ESPEJO SOFTWARE</a>
         <div className="nav-links"><a href="#services">Services</a><a href="#work">Work</a><a href="#pricing">Pricing</a><a href="#about">About</a></div>
+        <Link className="lang-switch" href="/es" lang="es">ES</Link>
         <a className="outline-button" href="#contact">Start a project ↗</a>
       </nav>
 
@@ -168,6 +170,7 @@ export default function Home() {
         </div>
         <div className="pricing-grid">
           {pricing.map((plan) => <article className={plan.featured ? 'pricing-card featured' : 'pricing-card'} key={plan.name}>
+            {plan.featured && <span className="featured-badge">START HERE</span>}
             <small>{plan.label}</small>
             <h3>{plan.name}</h3>
             <div className="price"><strong>{plan.price}</strong><span>{plan.cadence}</span></div>
