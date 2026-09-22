@@ -73,7 +73,7 @@ const pricing = [
   {
     label: 'Monthly partnership',
     name: 'Momentum',
-    price: '$500',
+    price: '$650',
     cadence: 'per month',
     text: 'Ten dedicated hours each month for steady improvements, maintenance, and moving your product forward.',
     note: 'Includes up to 10 hours',
@@ -81,7 +81,7 @@ const pricing = [
   {
     label: 'Monthly partnership',
     name: 'Growth',
-    price: '$1,000',
+    price: '$1,400',
     cadence: 'per month',
     text: 'Twenty-five dedicated hours for businesses with an active roadmap and a consistent development rhythm.',
     note: 'Includes up to 25 hours',
