@@ -2,7 +2,7 @@ import type { MetadataRoute } from 'next';
 import { projects } from './work/projects';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const base = 'https://espejosoftware.com';
+  const base = 'https://www.espejosoftware.com';
   const now = new Date();
   const pages: MetadataRoute.Sitemap = [
     { url: base, lastModified: now, changeFrequency: 'monthly', priority: 1, alternates: { languages: { en: base, es: `${base}/es` } } },
