@@ -210,6 +210,14 @@
   line-height: 1.65;
 }
 
+.project.website .project-image img {
+  object-position: center;
+}
+
+.case-barbara-real-estate .case-image-primary img {
+  object-position: center;
+}
+
 @media (max-width: 900px) {
   .pricing-heading {
     grid-template-columns: 1fr;

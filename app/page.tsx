@@ -60,6 +60,15 @@ const projects = [
     image: '/tag-portfolio.png',
     className: 'phone',
   },
+  {
+    name: 'Barbara B.M. Real Estate',
+    slug: 'barbara-real-estate',
+    label: 'Business website · Real estate',
+    text: 'An elevated South Florida real-estate website designed to build trust, present opportunities, and turn visitors into conversations.',
+    href: 'https://www.barbarabmrealestate.com',
+    image: '/barbara-real-estate-hero.png',
+    className: 'website',
+  },
 ];
 
 const pricing = [

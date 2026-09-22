@@ -58,6 +58,29 @@ export const projectsEs: Project[] = [
     images: [{ src: '/tag-home.png', alt: 'Pantalla principal de TAG Groceries', className: 'phone-shot' }, { src: '/tag-list.png', alt: 'Lista compartida de TAG Groceries', className: 'phone-shot' }, { src: '/tag-portfolio.png', alt: 'Etiquetas personalizadas de TAG Groceries', className: 'phone-shot' }],
     liveUrl: 'https://taggroceries.com/#/', liveLabel: 'Visitar TAG Groceries',
   },
+  {
+    slug: 'barbara-real-estate', index: '04', name: 'Barbara B.M. Real Estate', category: 'Sitio empresarial · Bienes raíces · Sur de Florida',
+    headline: 'Un hogar digital elegante para una marca inmobiliaria personal.',
+    summary: 'Un sitio web refinado y adaptable que ayuda a una profesional inmobiliaria del sur de Florida a comunicar su enfoque, presentar propiedades e invitar a compradores y vendedores a conversar.',
+    challenge: 'Un negocio inmobiliario personal necesita más que una página genérica de agente. El sitio debía generar confianza rápidamente, sentirse adecuado para propiedades excepcionales, explicar los servicios y ofrecer un camino sencillo para comunicarse.',
+    solution: 'El sitio combina un diseño editorial centrado en imágenes con mensajes claros, propiedades seleccionadas, rutas de servicio y oportunidades visibles de contacto. El resultado es una presencia distintiva, personal, local y fácil de navegar.',
+    audience: ['Compradores de vivienda en el sur de Florida', 'Propietarios que desean vender', 'Clientes que se mudan a la zona', 'Posibles clientes inmobiliarios'],
+    features: [
+      { title: 'Presentación editorial', text: 'Imágenes amplias, tipografía cuidada y espacios generosos crean una experiencia elegante y accesible.' },
+      { title: 'Servicios claros', text: 'Comprar, vender y mudarse se presentan como caminos distintos para iniciar una conversación.' },
+      { title: 'Propiedades seleccionadas', text: 'Una presentación visual de residencias comunica el mercado y la perspectiva de la marca.' },
+      { title: 'Posicionamiento personal', text: 'El contenido comunica un enfoque atento y tranquilo en lugar de usar una plantilla inmobiliaria genérica.' },
+      { title: 'Diseño adaptable', text: 'La experiencia completa funciona correctamente en teléfonos, tabletas y computadoras.' },
+      { title: 'Base para búsquedas', text: 'El contenido y el enfoque en el sur de Florida crean una base clara para el descubrimiento local.' },
+    ],
+    outcomes: ['Un hogar digital confiable para la marca', 'Caminos claros para compradores y vendedores', 'Una presentación premium en cada pantalla', 'Un canal directo para nuevas conversaciones'],
+    images: [
+      { src: '/barbara-real-estate-hero.png', alt: 'Página principal de Barbara B.M. Real Estate con una casa frente al agua', className: 'landscape' },
+      { src: '/barbara-real-estate-waterfront.png', alt: 'Presentación de una propiedad frente al agua' },
+      { src: '/barbara-real-estate-condo.png', alt: 'Presentación de una residencia frente al océano' },
+    ],
+    liveUrl: 'https://www.barbarabmrealestate.com', liveLabel: 'Visitar Barbara B.M. Real Estate',
+  },
 ];
 
 export function getProjectEs(slug: string) { return projectsEs.find((project) => project.slug === slug); }

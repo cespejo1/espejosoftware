@@ -83,6 +83,29 @@ export const projects: Project[] = [
     ],
     liveUrl: 'https://taggroceries.com/#/', liveLabel: 'Visit TAG Groceries',
   },
+  {
+    slug: 'barbara-real-estate', index: '04', name: 'Barbara B.M. Real Estate', category: 'Business website · Real estate · South Florida',
+    headline: 'A polished digital home for a personal real-estate brand.',
+    summary: 'A refined, responsive marketing website that helps a South Florida real-estate professional communicate her approach, present curated properties, and invite buyers and sellers to start a conversation.',
+    challenge: 'A personal real-estate business needs more than a generic agent page. The website had to establish trust quickly, feel appropriate for exceptional homes, explain services clearly, and create an easy path for buyers, sellers, and relocating clients to connect.',
+    solution: 'The site combines an image-led editorial design with focused messaging, curated property presentations, service pathways, and prominent contact opportunities. The result is a distinctive business presence that feels personal, local, and easy to navigate on any screen.',
+    audience: ['South Florida home buyers', 'Homeowners preparing to sell', 'Clients relocating to the area', 'Prospective real-estate clients'],
+    features: [
+      { title: 'Editorial presentation', text: 'Large-scale imagery, considered typography, and generous spacing create an elevated but approachable experience.' },
+      { title: 'Clear service paths', text: 'Buying, selling, and relocating are presented as distinct ways to begin a conversation.' },
+      { title: 'Property showcase', text: 'Curated residences give visitors a visual sense of the market and the brand’s perspective.' },
+      { title: 'Personal positioning', text: 'The content establishes a calm, attentive approach instead of relying on a generic brokerage template.' },
+      { title: 'Responsive design', text: 'The complete experience adapts cleanly across phones, tablets, and desktop screens.' },
+      { title: 'Search-ready foundation', text: 'Semantic content and South Florida positioning give the business a clear foundation for local discovery.' },
+    ],
+    outcomes: ['A credible home for the real-estate brand', 'Clear paths for buyers, sellers, and relocating clients', 'A premium presentation that works on every screen', 'A direct channel for new client conversations'],
+    images: [
+      { src: '/barbara-real-estate-hero.png', alt: 'Barbara B.M. Real Estate homepage with a South Florida waterfront home', className: 'landscape' },
+      { src: '/barbara-real-estate-waterfront.png', alt: 'Waterfront property presentation on the Barbara B.M. Real Estate website' },
+      { src: '/barbara-real-estate-condo.png', alt: 'Oceanfront residence presentation on the Barbara B.M. Real Estate website' },
+    ],
+    liveUrl: 'https://www.barbarabmrealestate.com', liveLabel: 'Visit Barbara B.M. Real Estate',
+  },
 ];
 
 export function getProject(slug: string) { return projects.find((project) => project.slug === slug); }

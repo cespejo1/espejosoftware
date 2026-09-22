@@ -21,6 +21,7 @@ const projects = [
   { name: 'TradeWork', slug: 'tradework', label: 'Operaciones · Web + móvil', text: 'Una plataforma creada para que empresas de servicios organicen solicitudes, trabajos, equipos y clientes.', href: 'https://app.tradeworkapp.com', image: '/tradework-portfolio.png', className: 'wide' },
   { name: 'Elite Driving School', slug: 'elite-driving-school', label: 'Programación y portal · Aplicación web', text: 'Una experiencia completa para inscripciones, horarios, pagos, documentos y seguimiento del progreso estudiantil.', href: 'https://elitedriversmn.com', image: '/elite-portfolio.png', className: 'tall' },
   { name: 'TAG Groceries', slug: 'tag-groceries', label: 'Compras · Aplicación móvil', text: 'Una aplicación práctica que organiza listas de compras por tienda, pasillo o cualquier etiqueta personalizada.', href: 'https://taggroceries.com/#/', image: '/tag-portfolio.png', className: 'phone' },
+  { name: 'Barbara B.M. Real Estate', slug: 'barbara-real-estate', label: 'Sitio web empresarial · Bienes raíces', text: 'Un sitio web elegante para bienes raíces en el sur de Florida, diseñado para generar confianza, presentar oportunidades y convertir visitas en conversaciones.', href: 'https://www.barbarabmrealestate.com', image: '/barbara-real-estate-hero.png', className: 'website' },
 ];
 
 const pricing = [
